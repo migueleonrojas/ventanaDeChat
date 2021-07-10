@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/windowChatStyle.css">
+
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="../scripts/socket.js"></script>
+
+
+    </head>
+
+
+    <body>
+        <!--si se va a colocar en worpress comentar este contenedor-->
+        <div id = "btn_ws">
+            <img src="../media/images/logoMilPagos.jpg" width="70" height="70"/>
+        </div>
+        <!---->
+
+        <div class="windows_milpagos">
+            <div class="header">
+                <div class="logo">
+                    <img id="image" src="../media/images/logoMilPagos.jpg" width="25" height="25">
+                </div>
+                <div class="title">
+                    <p>Milpagos</p>
+                </div>
+
+                <div class="close">
+                    <span id = "buttonClose" style="color: white;" >×</span>
+                </div>
+            </div>
+
+            <div id="message_box">
+                
+                <div class="form_user">
+                    <div class="content-form-login">
+                        <div class="form_user_inputs">
+                            <input type="text" id="email_i" placeholder="Indique su correo" value="">
+                            <input type="text" id="name_i"  placeholder="Indique su nombre" value="">
+                        </div>
+                        <div class="login">
+                            <button id="login_buttom">Enviar</button>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div class="area_input_message">
+
+                <textarea id="message_input" style="resize: none;"></textarea>
+                <div id="cont_send_buttom">
+                    <svg id="send_buttom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 20 18" width="20" height="18">
+                        <defs>
+                            <clipPath id="_clipPath_fgX00hLzP9PnAfCkGQoSPsYB7aEGkj1G">
+                                <rect width="20" height="18">        
+                                </rect>
+                            </clipPath>
+                        </defs>
+                        <g>
+                            <path d=" M 0 0 L 0 7.813 L 16 9 L 0 10.188 L 0 18 L 20 9 L 0 0 Z " fill="rgb(46,46,46)">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>    
+
+    </body>
+
+</html>
